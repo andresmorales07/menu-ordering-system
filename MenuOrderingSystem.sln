@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuOrderingSystem", "MenuOrderingSystem\MenuOrderingSystem.csproj", "{0CB5CA4A-D218-482A-8ECB-45747D585811}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuOrderingSystemTests", "MenuOrderingSystemTests\MenuOrderingSystemTests.csproj", "{4A042985-8CB4-44C4-895E-9EF83397E2DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CB5CA4A-D218-482A-8ECB-45747D585811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CB5CA4A-D218-482A-8ECB-45747D585811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CB5CA4A-D218-482A-8ECB-45747D585811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CB5CA4A-D218-482A-8ECB-45747D585811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A042985-8CB4-44C4-895E-9EF83397E2DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A042985-8CB4-44C4-895E-9EF83397E2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A042985-8CB4-44C4-895E-9EF83397E2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A042985-8CB4-44C4-895E-9EF83397E2DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
