@@ -54,7 +54,10 @@ public class OrderBuilder
 
     if (_errors.Any()) throw new ArgumentException(GenerateErrorMessage(_errors));
 
-    var orderOutput = $"{GetDishName(MenuItemType.Main)}, {GetDishName(MenuItemType.Side)}{(hasMultipleSides ? "(" + GetDishCount(MenuItemType.Side) + ")" : "")}, {GetDishName(MenuItemType.Drink)}{(hasMultipleDrinks ? "(" + GetDishCount(MenuItemType.Drink) + ")" : "")}{(_menuType == MenuType.Dinner ? ", Water, " + GetDishName(MenuItemType.Dessert) : "")}";
+    var orderOutput = $"{GetDishName(MenuItemType.Main)}, " +
+                      $"{GetDishName(MenuItemType.Side)}{(hasMultipleSides ? "(" + GetDishCount(MenuItemType.Side) + ")" : "")}, " +
+                      $"{GetDishName(MenuItemType.Drink)}{(hasMultipleDrinks ? "(" + GetDishCount(MenuItemType.Drink) + ")" : "")}" +
+                      $"{(_menuType == MenuType.Dinner ? $"{(GetDishName(MenuItemType.Drink) == Water ? ", " : ", Water, ")}" + GetDishName(MenuItemType.Dessert) : "")}";
     return orderOutput;
   }
 

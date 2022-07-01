@@ -18,6 +18,7 @@ public class OrderHandlerTest
   [DataRow("Lunch 1,2,2", "Sandwich, Chips(2), Water")]
   [DataRow("Lunch", "Unable to process: Main is missing, side is missing")]
   [DataRow("Dinner 1,2,3,4", "Steak, Potatoes, Wine, Water, Cake")]
+  [DataRow("Dinner 1,2,4", "Steak, Potatoes, Water, Cake")]
   [DataRow("Dinner 1,2,3", "Unable to process: Dessert is missing")]
   public void TestOrderHandler(string order, string expected)
   {
